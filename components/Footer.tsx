@@ -1,4 +1,4 @@
-import { logoutAccount } from '@/lib/actions/user.action';
+import { logoutAccount } from '@/lib/actions/user.actions';
 import Image from 'next/image';
 import router from 'next/router';
 import React from 'react';
