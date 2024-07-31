@@ -1,5 +1,5 @@
-// src/lib/server/appwrite.js
 'use server';
+
 import { Client, Account, Databases, Users } from 'node-appwrite';
 import { cookies } from 'next/headers';
 
@@ -19,12 +19,6 @@ export async function createSessionClient() {
   return {
     get account() {
       return new Account(client);
-    },
-    get database() {
-      return new Databases(client);
-    },
-    get user() {
-      return new Users(client);
     },
   };
 }
